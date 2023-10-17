@@ -4,7 +4,7 @@ metadata:
   name: my-ingress-gateway
   namespace: default                                                                    
   annotations:
-    argocd.argoproj.io/sync-options: ServerSideApply=true
+    argocd.argoproj.io/sync-options: ServerSideApply=true,Prune=false
 spec:             
   listeners:          
   - port: 443      
